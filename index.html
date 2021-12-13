@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teclazon</title>
+    <!-- enlace con favicon -->
+    <link rel="shortcut icon" href="./favicon/teclado.ico"
+    type="image/x-icon">
+    <!-- enlace con el estilo-->
+    <link rel="stylesheet" href="./styles/style.css">
+    <!--enlace con javascript-->
+    <script src="./javascripts/javascript.js"></script>
+
+    <!-- enlace al catálogo awesome 4.7-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <div id="container">
+        <nav>
+            <div class="topnav" id="nav">
+                <a href="#hero">Home</a>
+                <a href="#introduction">Introduction</a>
+                <a href="#curiosidad">Curious Fact</a>
+                <a href="#types">Types</a>
+                <a href="#funcionamiento">Functionality</a>
+                <a href="#marcas">Brands</a> 
+                <a href="#lugar">Where can I find them?</a>
+                <a href="#personal">Personal opinion</a>
+                <a href="#bibliografía">Bibliography</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                &#9776;
+            </div>
+        </nav>
+        <section id="hero">
+            <a href="#introduction" id="cta" class="button">Keyboards will rule the world</a>
+        </section>
+        <hr>
+        <section id="introduction">
+            <div class="mitad" id="izquierda">
+                <img id="teclas" src="./images/tecla.jpg" alt="teclas">
+            </div>
+            <div>
+                <h2 id="texto" class="orange">Introduction</h2>
+                <p id="texto">In the world of computing there are many components, some of which form the software, and others, the hardware. On this page we will look at the history of one of the most important components created since the 17th century and one of the most important when it comes to typing, namely keyboards. The following device is used for writing in both a digital and analogue environment, i.e. keyboards were also used in old typewriters.
+                </p>
+            </div>
+        </section>
+
+
+
+        <div class="clearfloat" ></div>
+        <section>
+            <div class="mitad">
+                <img id="maquina" src="./images/descarga.jfif" alt="maquina">
+            </div>
+            <div id="curiosidad">
+                <h2 id="texto" class="orange">Curious fact</h2>
+                <p id="texto">The first typewriter appeared in the 18th century. It was in 1714 that Henry Mill registered the first patent that looked like a typewriter, although nobody knew anything about it. In 1829 the printing press appeared, which was considered by people to be the first typewriter.
+                </p>
+            </div>
+        </section>
+
+
+
+        <div class="clearfloat" ></div>
+        <section id="types">
+        <div>
+            <h2 id="texto">Types</h2>
+                <p id="texto">Currently there are several types of keyboards, the most commonly used are the following:</p>
+            <h3 id="texto">Membrane keyboards</h3>
+                <p id="texto">
+                Of all those we are going to talk about, these keyboards are the cheapest, the most versatile and the most widely used. Membrane keyboards are keyboards that, as the name suggests, have a membrane under each key and are all connected together. There is no mechanical element on the keys and the letters rise up when pressed thanks to the rubber underneath them. These are the most common because they are the cheapest and come in the widest variety of models.</p>
+                <img id="membrana" src="./images/membrana.jfif" alt="membrana">
+            <h3 id="texto">Mechanical keyboards</h3>  
+                <p id="texto">
+                In this keyboard each switch has a separate mechanism to control when the switch is pressed. There are different mechanisms that address different needs and the main advantage of mechanical keyboards is their professionalism, as each mechanism is designed for what you are looking for. In general, if you buy the right keyboards, they will be faster and more durable.</p>
+                <img id="mecanico" src="./images/mecanico.jfif" alt="mecanico">
+            <h3 id="texto">Portable keyboards</h3>  
+                <p id="texto">
+                Tablets have their own virtual keyboard, which is designed to be a convenient addition. For example, some are attached to the case and serve as a platform, or some are rollable, you can also wash them or get them wet without any problem and they are usually made of plastic or silicone and will not get damaged. There are also folding bags, which allow you to fold them and take up very little space.</p>
+                <img id="portatil" src="./images/portatil.jfif" alt="portatil">
+            <h3 id="texto">Keyboards for video editing</h3>
+                <p id="texto">
+                There are special keyboards for video editors, although this is just one of many dedicated keyboards on the market. It's not just for professionals, and there are €100 or €150 options available from Amazon.
+                </p>
+                <img id="edicion" src="./images/edicion.jfif" alt="edicion">
+            <h3 id="texto">Digital keyboards</h3>
+                <p id="texto">
+                The mobile keyboard has become one of the most used devices in everyday life to send endless messages on WhatsApp. They are keyboards similar to physical keyboards where you have to touch each key one by one with the help of a programme that autocompletes the words, saving you time when typing.
+                </p>
+                <img id="tactiles" src="./images/tactiles.jfif" alt="tactiles">
+
+        </div>
+
+
+
+        <section id="funcionamiento">
+            <div>
+                <h2 id="texto">Functionality</h2>
+                <p id="texto" >
+                Every time you press or release a key on the PC, the hardware interrupt occurs, with vector 9. There are two software modules responsible for keyboard input, one of them is responsible for reading locks, converting them into ASCII and saving them in a memory buffer; the other one is responsible for checking the buffer and returning its status whenever the user requires it. In addition to this internal memory, the keyboard has some registers, two of them are accessible from the outside:</p>
+                <p id="texto">Status Log : Contains information about the interface.</p> 
+                <p id="texto">Data Log : If there are keystrokes recorded in the internal memory of the keypad, a copy of the scancode corresponding to the first keystroke is stored in this log.</p>
+                <p id="texto">Both routines are implemented in the BIOS of computers, the first one operating through the hardware interfaces created by the keyboard interface (INT 9). The second is called by user programs by executing the int 16h software interrupt.</p>
+                <p id="texto">This well-detailed video explains how a keyboard works:</p>
+                <iframe src="https://www.youtube.com/embed/ewE8b7zzej0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </p>
+                
+            </div>
+
+
+        <section class="img">
+                <h2 id="marcas">Brands</h2>
+            <div class="cuatro-columnas">
+                <a href="https://www.coolermaster.com/catalog/legacy-products/cases/enforcer/">
+                    <img class="cuarto" src="./images/storm.jfif" alt="storm">
+                </a>
+                <a href="https://www.logitech.com/es-es">
+                    <img class="cuarto" src="./images/logitech.png" alt="logitech">
+                </a>
+                <a href="https://www.amazon.es/Revoltec-RE108-Teclado-inal%C3%A1mbrico-pl%C3%A1stico/dp/B005JFOQH4">
+                    <img class="cuarto" src="./images/revoltec.jfif" alt="revoltec">
+                </a>
+                <a href="https://www.arctic.de/en/">
+                    <img class="cuarto" src="./images/artic.png" alt="artic">
+                </a>
+            </div>
+            <div class="clearfloat" ></div>
+            <h2 id="lugar" class="orange">Where can I find them?</h2>
+            <div class="cuatro-columnas">
+                
+                <a href="https://www.amazon.es/">
+                    <img class="cuarto" src="./images/amazon.png" alt="amazon">
+                </a>
+                <a href="https://www.ebay.es/">
+                    <img class="cuarto" src="./images/ebay.png" alt="ebay">
+                </a>
+                <a href="https://es.aliexpress.com/">
+                    <img class="cuarto" src="./images/ali.png" alt="aliexpress">
+                </a>
+                <a href="https://www.pccomponentes.com/">
+                    <img class="cuarto" src="./images/pc.jfif" alt="pccomponentes">
+                </a>
+            </div>
+        </section>
+            <div class="clearfloat" ></div>
+        <section>
+            <h2 id="personal">Personal opinion</h2>
+            <div>
+                <p id="texto" >
+                    Technologies continue to advance today, and it is impressive what they can do, but we must not forget how we got there, and I think that the keyboard is one of the devices that have helped us the most in this journey, so much so that we continue to use them. At least, that's the way it will be, until text-to-speech is perfected.
+                </p>
+            </div>
+        </section>
+
+        <section>
+            <h2 id="bibliografía">Bibliography</h2>
+            <div>
+                <p id="texto">
+                    The links used on this page are:
+                    <a id="link" href="https://www.adslzone.net/reportajes/tecnologia/teclado/">AZ adsl zone</a>
+                    <a id="link" href="https://es.wikipedia.org/wiki/Teclado_(inform%C3%A1tica)">Wikipedia</a>
+                    <a id="link" href="https://www.deepl.com/translator">DeepL</a>
+            </div>
+
+        </section>
+        <footer>
+            <footer>
+                <div>
+                    <p class="mitad">Created by:</p>
+                    <p>Álvaro Linero</p>
+                </div>
+                <div>
+                    <p>Follow me on my social medias!</p>
+                    <a href="https://github.com/Alvaroskill">
+                        <i class="fa fa-github" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://twitter.com/EpicLinero">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </a>
+                </div>  
+        </footer>
+    </div>
+</body>
+</html>
